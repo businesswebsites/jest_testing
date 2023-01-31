@@ -1,5 +1,6 @@
 const functions = require('./functions');
 
+//number matchers
 test('adds 1 + 2 to equal 3', () => {
   expect(functions.sum(1, 2)).toBe(3);
 });
@@ -23,3 +24,17 @@ test('bigSum of 1000 and 2005 is 3005', ()=>{
   expect(value).toBeLessThan(3006);
   expect(value).toBe
 });
+
+//Truthiness
+test("truthy operators", ()=>{
+    const name = "Software testing help";
+    let n = null;
+    expect(n).toBeNull();
+    expect(name).not.toBeNull
+})
+
+//string matchers
+test("string matchers", ()=>{
+    const string_name = "Adrian and my nickname is Adi";
+    expect(string_name).toMatch(/Adi/);
+})
