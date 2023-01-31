@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon database.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/businesswebsites/jest_testing#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
